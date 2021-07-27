@@ -1,0 +1,26 @@
+*{margin:0;padding:0; }
+ body {font-family: 'Lato', sans-serif;}
+
+.phai a {
+    font-size: 20px;
+    color: black;
+    padding: 0px 10px;
+    transition: 0.4s;
+
+}
+
+.menu {
+    background: gray;
+    padding: 40px 0px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.nholai{
+	padding: 20px 0px;
+}

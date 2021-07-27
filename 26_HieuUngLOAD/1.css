@@ -1,0 +1,19 @@
+*{margin:0;padding:0; }
+ body {font-family: 'Lato', sans-serif;}
+ .load{
+ 	transition: 0.4s;
+ 	opacity: 0;
+ }
+ .load.hieuungload{
+ 	animation: chuyendonglen 1s ease forwards;
+ }
+ @-webkit-keyframes chuyendonglen{
+ 	from {
+ 		transform: translateY(100px);
+ 		opacity: 0;
+ 	}
+ 	to {
+ 		transform: translateY(0);
+ 		opacity: 1;
+ 	}
+ }

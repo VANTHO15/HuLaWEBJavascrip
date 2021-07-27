@@ -1,0 +1,52 @@
+*{margin: 0; padding: 0;} 
+html,body{width: 100%; height: 100%;}
+.thanhxanh{
+	height: 43px;
+	background: #3b5998;
+}
+.motphantu{
+	position: relative;
+	float: right;
+	margin-right: 200px;
+	margin-top: 7px;
+	transition: 0.4s;
+}
+.tamgiac{
+	color: black;
+	font-size: 20px;
+	transition: 0.4s;
+	cursor: pointer;  /*  tạo ra bnaf tay khi dua len */
+}
+.danhsach{
+	position: absolute;
+	top: 36px;
+	right: -13px;
+	width: 200px;
+	opacity: 0;
+	visibility: hidden; /* ẩn danh sách đi */
+}
+.danhsach:after{   /* là ghi thêm phía sau class danhsach=> tạo ra hinh tam giac */
+	position: absolute;
+	content: "";
+	top: -20px;
+	right: 0px;
+	height: 0px;
+	border: 11px solid rgba(255, 217, 0, 0);
+	border-bottom-color: white;
+	right: 10px;
+}
+.tamgiactrang{
+	color: white;
+}
+.ra{
+	opacity: 1;
+	visibility: visible; /* Hien danhsach vo */
+}
+li.list-group-item{
+	font-size: 13px;
+	padding: 5px 26px;
+}
+li.list-group-item:hover{
+	background: #3b5998;
+	color: white;
+}

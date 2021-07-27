@@ -1,0 +1,38 @@
+*{margin:0;padding:0; }
+
+.giua.dungyen {
+    position: fixed;
+    top: 50px;
+}
+ body {font-family: 'Lato', sans-serif;}
+.menu a {
+    padding: 0px 20px;
+    color: #f3ebeb;
+    font-size: 12px;
+    font-family: lato;
+    text-transform: uppercase;
+}
+
+.menu {
+    background: #9f1d21;
+    height: 50px;
+    line-height: 56px;
+    transition: 0.4s;
+}
+ .banner{
+ 	background: url(images/1.png) no-repeat center  ;
+ 	background-size: cover;
+ 	height: 100px;
+ 	border: 2px solid #312d2d;
+ }
+ .menu a:hover{
+	color: #28a911;
+	font-size: 13px;
+	}
+.menuden{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0px;
+	background: #231c1c;
+}

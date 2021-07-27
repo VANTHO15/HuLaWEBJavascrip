@@ -1,0 +1,247 @@
+*{margin:0;padding:0; }
+
+.slidewrapper{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+.cacslide{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.cacslide ul{
+	width: 100%;
+	height: 100%;
+}
+.cacslide ul li{
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: 0.4s;
+	opacity: 0;
+
+}
+.cacslide ul li.active{
+	opacity: 1;
+}
+.motslide{
+	width: 100%;
+	height: 100%;
+}
+
+
+.cacslide ul li .motslide{
+	position: relative;	
+}
+.cacslide .motslide .anh{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.motslide .nauduoi1,
+.motslide .nauduoi2,
+.motslide .nautren,
+.motslide .textnoidung
+{
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	opacity: 0;
+}
+
+
+.motslide .nauduoi1{
+	
+	top: -90%;
+	opacity: 0;
+
+}
+ul li.active .motslide .nauduoi1,
+ul li.active .motslide .nauduoi2
+{
+	animation: nauvao 1s forwards;
+}
+@-webkit-keyframes nauvao{
+	from {
+		transform: translateX(-100%) translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0) translateY(0);
+		opacity: 0.4;
+	}
+}
+ul li.active .motslide .nauduoi2{
+	animation-delay: 0.25s;
+}
+
+ul li.active .motslide .nautren{
+	animation: nautrenvao 1s forwards;
+	animation-delay: 0.25s;
+}
+@-webkit-keyframes nautrenvao{
+	from {
+		transform: translateX(100%) translateY(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0) translateY(0);
+		opacity: 0.4;
+	}
+}
+.motslide .nauduoi2{
+	opacity: 0;
+	top: -40%;
+
+}
+.motslide .textnoidung{
+	width: 16%;
+	left: 4%;
+	z-index: 3;
+	opacity: 1;
+	top: 30%;
+	color: white;
+}
+.motslide .nautren{
+	opacity: 0;
+	right: 0;
+}
+.motslide .textnoidung h2{
+	
+font-size: 70px;
+	
+font-weight: normal;
+	
+font-family: lato;
+opacity: 0;
+}
+.textnoidung small{
+	
+font-size: 24px;
+	
+font-weight: bold;
+	
+font-family: serif;
+	
+padding: 10px 0px 19px 0px;
+	
+display: block;
+opacity: 0;
+}
+.textnoidung .ke{
+	
+width: 207px;
+	
+height: 2px;
+	
+background: #ffffffa1;
+	
+padding-top: -24px;
+	
+margin-top: -10px;
+	
+margin-bottom: 24px;
+opacity: 0;
+}
+.textnoidung p{
+	
+line-height: 17px;
+	
+font-size: 13px;
+	
+color: #ccc6c6;
+opacity: 0;
+}
+.textnoidung .nut{
+	
+color: white;
+	
+text-decoration: none;
+	
+border: 1px solid white;
+	
+padding: 7px 40px;
+	
+margin-top: 10px;
+	
+font-size: 20px;
+	
+font-weight: bold;
+	
+display: inline-block;
+opacity: 0;
+}
+
+.cacslide ul li.active .textnoidung h2,
+.cacslide ul li.active .textnoidung small,
+.cacslide ul li.active .textnoidung .ke,
+.cacslide ul li.active .textnoidung p,
+.cacslide ul li.active .textnoidung .nut
+{
+	animation: chudivao 1s forwards;
+}
+@-webkit-keyframes chudivao{
+	from {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+.cacslide ul li.active .textnoidung h2{
+	animation-delay: 0.25s;
+}
+.cacslide ul li.active .textnoidung small{
+	animation-delay: 0.45s;
+}
+.cacslide ul li.active .textnoidung .ke{
+	animation-delay: 0.65s;
+}
+.cacslide ul li.active .textnoidung p{
+	animation-delay: 0.85s;
+}
+.cacslide ul li.active .textnoidung .nut{
+	animation-delay: 1s;
+}
+.chuyenslide ul {
+	display: inline;
+	position: relative;
+}
+
+.chuyenslide ul li:hover,
+.chuyenslide ul li.kichhoat {
+	background: #0c0c0c;
+}
+
+.chuyenslide ul li {
+	display: inline-block;
+	border: 1px solid #1b1616bf;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 20px 12px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.chuyenslide {
+	text-align: center;
+	position: absolute;
+	bottom: 1%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9;
+}
+body {font-family: 'Lato', sans-serif;}
